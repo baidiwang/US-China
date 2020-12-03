@@ -83,7 +83,7 @@ figcaption {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    min-height: 50vh;
+    min-height: 70vh;
     padding: 10px;
 }
 
@@ -91,7 +91,7 @@ figcaption {
 .container.image {
     max-width: 1200px;
     padding: 0;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .container.image.hero {
@@ -141,7 +141,7 @@ h2 {
 
 .screen {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
 }
 
