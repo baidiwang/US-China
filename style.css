@@ -20,6 +20,33 @@ You will find this is far easier than the opposite task of using CSS to cram you
 }
 
 /** APPLY BASE TAG STYLES */
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #383838;
+    background-color: #f8f8f8;
+}
+
+a {
+    color: #7b9d6f;
+    text-decoration: none;
+}
+
 body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
@@ -130,13 +157,6 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.mark {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
-    text-align: center;
-}
-
 .paragraph {}
 
 .screen {
@@ -187,12 +207,72 @@ h2 {
     border: 0;
 }
 
+/* --------------------------------
+
+Timeline style
+
+-------------------------------- */
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li.active {
+    border-top: 5px solid #000;
+}
+
+.mark {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.mark .img {
+    flex-basis: 30%;
+}
+
+.mark h3 {
+    flex-basis: 68%;
+}
+
+.timeline {
+    width: 100%;
+    padding: 22px;
+    margin: 0 auto;
+    position: fixed;
+    padding: 5px;
+    z-index: 3;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .timeline {
+        display: block;
+    }
 }
 
 /*********************************************************************

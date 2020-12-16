@@ -14,7 +14,7 @@ $(() => {
 
 
 
-
+/* video part */
 const players = {};
 
 function onYouTubeIframeAPIReady() {
@@ -61,4 +61,22 @@ $("body").on("click", ".fa-pause", function (e) {
 	const player_id = this_controls.data("id");
 
 	players[player_id].pauseVideo();
+});
+
+
+
+/* timeline part */
+$(() => {
+	$("p[id]").each(function () {
+		console.log("Paragraph found");
+		const $this_paragraph = $(this);
+		const id = $this_paragraph.attr("id");
+		const $a_tag = $(`a[href='#${id}']`);
+		const $this_li = $a_tag.closest("li");
+
+		new Watch($this_paragraph).inView(() => {
+			$("li.active").removeClass("active");
+			$this_li.addClass("active");
+		});
+	});
 });
