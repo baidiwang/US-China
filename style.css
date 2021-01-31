@@ -9,14 +9,14 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
  LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
 *********************************************************************/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
 
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
 /** SET BORDER BOX EVERYWHERE */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /** APPLY BASE TAG STYLES */
@@ -27,184 +27,191 @@ Primary style
 -------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-*, *::after, *::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #383838;
-    background-color: #f8f8f8;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #383838;
+  background-color: #f8f8f8;
 }
 
 a {
-    color: #7b9d6f;
-    text-decoration: none;
+  color: #7b9d6f;
+  text-decoration: none;
 }
 
 body,
 html {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 22px;
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 22px;
 }
 
 /** RESPONSIVE IMAGES */
 figure,
 img {
-    /* Sets image width to match parent */
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+  /* Sets image width to match parent */
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
-    line-height: 1.2em;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
+  line-height: 1.2em;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
 }
 
 .images {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
 }
 
 .images img {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .images img.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    color: #FFF;
+  position: relative;
+  z-index: 2;
+  color: #fff;
 }
 
 /** Caption styles */
 .caption,
 figcaption {
-    font-size: 0.9rem;
-    color: #8e8a8a;
-    padding: 5px 0;
+  font-size: 0.9rem;
+  color: #8e8a8a;
+  padding: 5px 0;
 }
 
 /** BASE CLASSES */
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
 .container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 70vh;
-    padding: 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 70vh;
+  padding: 10px;
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
 .container.image {
-    max-width: 1200px;
-    padding: 0;
-    min-height: 80vh;
+  max-width: 1200px;
+  padding: 0;
+  min-height: 80vh;
 }
 
 .container.image.hero {
-    max-width: 2000px;
+  max-width: 2000px;
 }
 
 .container.image .caption,
 .container.image figcaption {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .content {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 h1 {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
-    text-align: center;
-    color: #FFF;
+  font-family: "Anton", sans-serif;
+  max-width: 800px;
+  margin: 0 auto -50px auto;
+  padding: 80px;
+  text-align: center;
+  color: whitesmoke;
 }
 
 h2 {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
-    text-align: center;
-    color: #FFF;
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
+  text-align: center;
+  color: #fff;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.paragraph {}
+.paragraph {
+}
 
 .screen {
-    width: 100%;
-    min-height: 80vh;
-    position: relative;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
 }
 
 .screen.light-text {
-    color: #FFF;
-    position: relative;
+  color: #fff;
+  position: relative;
 }
 
-.screen>* {
-    z-index: 2;
-    position: relative;
+.screen > * {
+  z-index: 2;
+  position: relative;
 }
 
 .screen .sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-[data-id='none'] {
-    color: #000;
+[data-id="none"] {
+  color: #000;
 }
 
 /** video setup */
 .video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: calc(9 / 16 * 100%);
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: calc(9 / 16 * 100%);
 }
 
 .video.vertical {
-    padding-bottom: calc(16 / 9 * 100%);
+  padding-bottom: calc(16 / 9 * 100%);
 }
 
 .video iframe,
 .video video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0;
+  padding-bottom: -50px;
 }
 
 /* --------------------------------
@@ -213,97 +220,98 @@ Timeline style
 
 -------------------------------- */
 nav {
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
 }
 
 nav ul li {
-    display: inline;
-    list-style: none;
-    padding: 10px;
+  display: inline;
+  list-style: none;
+  padding: 10px;
 }
 
 nav ul li a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 nav ul li.active {
-    border-top: 5px solid #000;
+  border-top: 5px solid #000;
 }
 
 .mark {
-    display: flex;
-    justify-content: center;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    padding: 0 10px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
+  text-align: center;
 }
 
 .mark .img {
-    flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 .mark h3 {
-    flex-basis: 68%;
+  flex-basis: 68%;
+}
+
+.headline {
+  text-align: center;
 }
 
 .timeline {
-    width: 100%;
-    padding: 22px;
-    margin: 0 auto;
-    position: fixed;
-    padding: 5px;
-    z-index: 3;
-    background-color: #FFF;
-    top: 0;
-    left: 0;
-    display: none;
+  width: 100%;
+  padding: 22px;
+  margin: 0 auto;
+  position: fixed;
+  padding: 5px;
+  z-index: 3;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
-
-    /* Any adjustments for tablets and larger go here.
+@media (min-width: 681px) {
+  /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    .timeline {
-        display: block;
-    }
+  .timeline {
+    display: block;
+  }
 }
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 769px) {
-    /* Any adjustments for desktop and larger go here.
+@media (min-width: 769px) {
+  /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
 }
 
 /*********************************************************************
   YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 805px) {
-
-    /* Any adjustments for desktop and larger go here.
+@media (min-width: 805px) {
+  /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
-    .container {
-        padding: 0;
-    }
+  .container {
+    padding: 0;
+  }
 }
 
 /*********************************************************************
   YOUR LARGE DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 1205px) {
-
-    /* Any adjustments for desktop and larger go here.
+@media (min-width: 1205px) {
+  /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
-    .container.image .caption,
-    .container.image figcaption {
-        padding: 5px 0;
-    }
+  .container.image .caption,
+  .container.image figcaption {
+    padding: 5px 0;
+  }
 }
