@@ -120,7 +120,7 @@ figcaption {
 .container.image {
   max-width: 1200px;
   padding: 0;
-  min-height: 80vh;
+  min-height: 10vh;
 }
 
 .container.image.hero {
@@ -160,9 +160,6 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.paragraph {
 }
 
 .screen {
