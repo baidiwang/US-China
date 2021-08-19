@@ -42,6 +42,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #383838;
   background-color: #f8f8f8;
+  padding-bottom: -20px;
 }
 
 a {
@@ -114,6 +115,7 @@ figcaption {
   margin: 0 auto;
   min-height: 70vh;
   padding: 10px;
+  padding-bottom: 90px;
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
@@ -136,21 +138,27 @@ figcaption {
   padding-top: 100px;
 }
 
+.paragraph {
+  background-color: rgba(191, 191, 191, 0.6);
+  text-align: center;
+  padding: 30px;
+}
+
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family: "Crete Round", serif;
   max-width: 800px;
   margin: 0 auto -50px auto;
-  padding: 80px;
+  padding: 100px;
   text-align: center;
   color: whitesmoke;
+  background-color: rgba(191, 191, 191, 0.6);
 }
 
 h2 {
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Crete Round", serif;
   max-width: 700px;
   margin: 0 auto 20px auto;
-  padding: 0 10px;
+  padding: 0 30px;
   text-align: center;
   color: #fff;
 }
